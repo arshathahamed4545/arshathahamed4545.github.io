@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and basic layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+}
+
+/* Main Content Styling */
+.container {
+    display: flex;
+    justify-content: space-between;  /* Align content and links on opposite sides */
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Content Section Styling */
+.main-content {
+    flex: 1;
+    padding-right: 20px;  /* Space for links on the right side */
+}
+
+/* Header Styling */
+header h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content h2 {
+    font-size: 28px;
+    color: #2f3b52;
+    margin-bottom: 10px;
+}
+
+.content p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Styling the Image */
+.dashboard-image {
+    margin-top: 20px;
+    width: 100%;  /* Make the image take full width of the content section */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+/* Links on the right side */
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;  /* Align links to the right */
+    padding-left: 20px;  /* Space between the content and links */
+}
+
+.links ul {
+    list-style: none;
+}
+
+.links ul li {
+    margin: 15px 0;
+}
+
+.links ul li a {
+    color: #2f3b52;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.links ul li a:hover {
+    color: #d3d3d3;
+}
+
+/* Styling the image below the links */
+.links-image {
+    margin-top: 20px;  /* Adds space above the image */
+    width: 100%;  /* Ensure the image fills the width of the container */
+    height: auto;
+    border-radius: 8px;  /* Optional: rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Optional: subtle shadow */
+}
