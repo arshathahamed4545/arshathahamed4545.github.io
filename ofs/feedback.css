@@ -1,0 +1,141 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Form Container */
+.feedback-form-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 900px;
+    font-size: 16px;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4CAF50;
+    font-size: 24px;
+}
+
+/* Fieldset Styling */
+.question-group {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fafafa;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 18px;
+    color: #4CAF50;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+/* Label and Input Styling */
+.option {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #4CAF50;
+}
+
+/* Submit Button Styling */
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsiveness for Mobile and Small Devices */
+@media (max-width: 600px) {
+    .feedback-form-container {
+        padding: 20px;
+    }
+
+    .submit-btn {
+        font-size: 16px;
+    }
+
+    fieldset {
+        padding: 15px;
+    }
+
+    legend {
+        font-size: 16px;
+    }
+
+    .option {
+        font-size: 14px;
+    }
+}
+
+/* Additional Styles for Spacing and Alignment */
+.question-group {
+    padding: 25px;
+}
+
+.question-group label {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.question-group input {
+    margin-right: 10px;
+    accent-color: #4CAF50;
+}
+
+/* Hover effect for the labels when mouse hovers over */
+.option:hover {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Adding margins between fields to prevent crowding */
+fieldset {
+    margin-bottom: 15px;
+}
+
+/* Error or required message handling */
+.required-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+

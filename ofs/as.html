@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <h2>Dashboard</h2>
+            <nav class="horizontal-nav">
+                <ul>
+                    <li>
+                        <a href="login.html">
+                            <img src="images/login-icon.png" alt="Login" class="nav-icon"> Login
+                        </a>
+                        <div class="button-group">
+                            <button class="back-button" onclick="window.history.back();">Back</button>
+                            <button class="logout-button" onclick="logout();">Logout</button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="register.html">
+                            <img src="images/register-icon.png" alt="Register" class="nav-icon"> Register
+                        </a>
+                        <div class="button-group">
+                            <button class="back-button" onclick="window.history.back();">Back</button>
+                            <button class="logout-button" onclick="logout();">Logout</button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="feedback.html">
+                            <img src="images/feedback-icon.png" alt="Feedback" class="nav-icon"> Feedback
+                        </a>
+                        <div class="button-group">
+                            <button class="back-button" onclick="window.history.back();">Back</button>
+                            <button class="logout-button" onclick="logout();">Logout</button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="contact.html">
+                            <img src="images/contact-icon.png" alt="Contact" class="nav-icon"> Contact
+                        </a>
+                        <div class="button-group">
+                            <button class="back-button" onclick="window.history.back();">Back</button>
+                            <button class="logout-button" onclick="logout();">Logout</button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="about.html">
+                            <img src="images/about-icon.png" alt="About Us" class="nav-icon"> About Us
+                        </a>
+                        <div class="button-group">
+                            <button class="back-button" onclick="window.history.back();">Back</button>
+                            <button class="logout-button" onclick="logout();">Logout</button>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header>
+                <h1>Welcome to the Dashboard</h1>
+            </header>
+            <section class="content">
+                <h2>Overview</h2>
+                <p>This is a professional dashboard layout. You can add charts, tables, and other components here.</p>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function logout() {
+            // Implement your logout logic here
+            alert("You have been logged out.");
+            // Redirect to login page or perform other actions
+            window.location.href = "login.html"; // Example redirect
+        }
+    </script>
+</body>
+</html>

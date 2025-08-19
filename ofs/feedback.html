@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+
+    <div class="feedback-form-container">
+        <h2>School Feedback Form</h2>
+        
+        <form action="/submit-feedback" method="POST">
+            
+            <!-- Question 1: Rating the School Environment -->
+            <fieldset class="question-group">
+                <legend>How would you rate the overall school environment?</legend>
+                <label class="option">
+                    <input type="radio" name="environment" value="excellent"> Excellent
+                </label>
+                <label class="option">
+                    <input type="radio" name="environment" value="good"> Good
+                </label>
+                <label class="option">
+                    <input type="radio" name="environment" value="average"> Average
+                </label>
+                <label class="option">
+                    <input type="radio" name="environment" value="poor"> Poor
+                </label>
+            </fieldset>
+
+            <!-- Question 2: Favorite Subjects -->
+            <fieldset class="question-group">
+                <legend>What subjects do you enjoy the most?</legend>
+                <label class="option">
+                    <input type="checkbox" name="subjects" value="tamil"> Tamil
+                </label>
+                <label class="option">
+                    <input type="checkbox" name="subjects" value="english"> English
+                </label>
+                <label class="option">
+                    <input type="checkbox" name="subjects" value="maths"> Maths
+                </label>
+                <label class="option">
+                    <input type="checkbox" name="subjects" value="physics"> Physics
+                </label>
+                <label class="option">
+                    <input type="checkbox" name="subjects" value="chemistry"> Chemistry
+                </label>
+            </fieldset>
+
+            <!-- Question 3: Satisfaction with Facilities -->
+            <fieldset class="question-group">
+                <legend>How satisfied are you with the school's facilities?</legend>
+                <label class="option">
+                    <input type="radio" name="facilities" value="very_satisfied"> Very Satisfied
+                </label>
+                <label class="option">
+                    <input type="radio" name="facilities" value="satisfied"> Satisfied
+                </label>
+                <label class="option">
+                    <input type="radio" name="facilities" value="neutral"> Neutral
+                </label>
+                <label class="option">
+                    <input type="radio" name="facilities" value="dissatisfied"> Dissatisfied
+                </label>
+            </fieldset>
+
+            <!-- New Question 4: Library Facilities -->
+            <fieldset class="question-group">
+                <legend>How satisfied are you with the library facilities?</legend>
+                <label class="option">
+                    <input type="radio" name="library" value="excellent"> Excellent
+                </label>
+                <label class="option">
+                    <input type="radio" name="library" value="good"> Good
+                </label>
+                <label class="option">
+                    <input type="radio" name="library" value="average"> Average
+                </label>
+                <label class="option">
+                    <input type="radio" name="library" value="poor"> Poor
+                </label>
+            </fieldset>
+
+            <!-- New Question 5: Lab Facilities -->
+            <fieldset class="question-group">
+                <legend>How satisfied are you with the lab facilities?</legend>
+                <label class="option">
+                    <input type="radio" name="lab" value="excellent"> Excellent
+                </label>
+                <label class="option">
+                    <input type="radio" name="lab" value="good"> Good
+                </label>
+                <label class="option">
+                    <input type="radio" name="lab" value="average"> Average
+                </label>
+                <label class="option">
+                    <input type="radio" name="lab" value="poor"> Poor
+                </label>
+            </fieldset>
+
+            <!-- New Question 6: Water Availability -->
+            <fieldset class="question-group">
+                <legend>How would you rate the availability of water in the school?</legend>
+                <label class="option">
+                    <input type="radio" name="water" value="excellent"> Excellent
+                </label>
+                <label class="option">
+                    <input type="radio" name="water" value="good"> Good
+                </label>
+                <label class="option">
+                    <input type="radio" name="water" value="average"> Average
+                </label>
+                <label class="option">
+                    <input type="radio" name="water" value="poor"> Poor
+                </label>
+            </fieldset>
+
+            <!-- New Question 7: Toilet Facilities -->
+            <fieldset class="question-group">
+                <legend>How satisfied are you with the toilet facilities?</legend>
+                <label class="option">
+                    <input type="radio" name="toilets" value="excellent"> Excellent
+                </label>
+                <label class="option">
+                    <input type="radio" name="toilets" value="good"> Good
+                </label>
+                <label class="option">
+                    <input type="radio" name="toilets" value="average"> Average
+                </label>
+                <label class="option">
+                    <input type="radio" name="toilets" value="poor"> Poor
+                </label>
+            </fieldset>
+
+            <!-- New Question 8: Syllabus Completion -->
+            <fieldset class="question-group">
+                <legend>Was the syllabus completed on time?</legend>
+                <label class="option">
+                    <input type="radio" name="syllabus" value="yes"> Yes
+                </label>
+                <label class="option">
+                    <input type="radio" name="syllabus" value="no"> No
+                </label>
+                <label class="option">
+                    <input type="radio" name="syllabus" value="partially"> Partially
+                </label>
+            </fieldset>
+
+            <!-- New Question 9: Teaching Quality -->
+            <fieldset class="question-group">
+                <legend>How would you rate the quality of teaching in your school?</legend>
+                <label class="option">
+                    <input type="radio" name="teaching_quality" value="excellent"> Excellent
+                </label>
+                <label class="option">
+                    <input type="radio" name="teaching_quality" value="good"> Good
+                </label>
+                <label class="option">
+                    <input type="radio" name="teaching_quality" value="average"> Average
+                </label>
+                <label class="option">
+                    <input type="radio" name="teaching_quality" value="poor"> Poor
+                </label>
+            </fieldset>
+
+            <!-- New Question 10: Extracurricular Activities -->
+            <fieldset class="question-group">
+                <legend>Are you satisfied with the extracurricular activities provided by the school?</legend>
+                <label class="option">
+                    <input type="radio" name="extracurricular" value="yes"> Yes
+                </label>
+                <label class="option">
+                    <input type="radio" name="extracurricular" value="no"> No
+                </label>
+                <label class="option">
+                    <input type="radio" name="extracurricular" value="neutral"> Neutral
+                </label>
+            </fieldset>
+
+            <!-- New Question 11: Safety on Campus -->
+            <fieldset class="question-group">
+                <legend>How safe do you feel on campus?</legend>
+                <label class="option">
+                    <input type="radio" name="safety" value="very_safe"> Very Safe
+                </label>
+                <label class="option">
+                    <input type="radio" name="safety" value="safe"> Safe
+                </label>
+                <label class="option">
+                    <input type="radio" name="safety" value="neutral"> Neutral
+                </label>
+                <label class="option">
+                    <input type="radio" name="safety" value="unsafe"> Unsafe
+                </label>
+            </fieldset>
+
+            <!-- New Question 12: Classroom Facilities -->
+            <fieldset class="question-group">
+                <legend>How would you rate the classroom facilities in terms of comfort and equipment?</legend>
+                <label class="option">
+                    <input type="radio" name="classroom" value="excellent"> Excellent
+                </label>
+                <label class="option">
+                    <input type="radio" name="classroom" value="good"> Good
+                </label>
+                <label class="option">
+                    <input type="radio" name="classroom" value="average"> Average
+                </label>
+                <label class="option">
+                    <input type="radio" name="classroom" value="poor"> Poor
+                </label>
+            </fieldset>
+
+            <!-- New Question 13: Transportation -->
+            <fieldset class="question-group">
+                <legend>How would you rate the school’s transportation facilities?</legend>
+                <label class="option">
+                    <input type="radio" name="transportation" value="excellent"> Excellent
+                </label>
+                <label class="option">
+                    <input type="radio" name="transportation" value="good"> Good
+                </label>
+                <label class="option">
+                    <input type="radio" name="transportation" value="average"> Average
+                </label>
+                <label class="option">
+                    <input type="radio" name="transportation" value="poor"> Poor
+                </label>
+            </fieldset>
+
+            <!-- New Question 14: Communication with Teachers -->
+            <fieldset class="question-group">
+                <legend>Are you satisfied with the communication between teachers and students?</legend>
+                <label class="option">
+                    <input type="radio" name="communication" value="yes"> Yes
+                </label>
+                <label class="option">
+                    <input type="radio" name="communication" value="no"> No
+                </label>
+                <label class="option">
+                    <input type="radio" name="communication" value="neutral"> Neutral
+                </label>
+            </fieldset>
+
+            <!-- New Question 15: Online Learning -->
+            <fieldset class="question-group">
+                <legend>If applicable, how satisfied are you with the school’s online learning system?</legend>
+                <label class="option">
+                    <input type="radio" name="online_learning" value="excellent"> Excellent
+                </label>
+                <label class="option">
+                    <input type="radio" name="online_learning" value="good"> Good
+                </label>
+                <label class="option">
+                    <input type="radio" name="online_learning" value="average"> Average
+                </label>
+                <label class="option">
+                    <input type="radio" name="online_learning" value="poor"> Poor
+                </label>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+        </form>
+        <center>
+            <button onclick="window.location.href='index.html'" class="back-button">Back to Dashboard</button>
+        </center>
+    </div>
+
+</body>
+</html>
